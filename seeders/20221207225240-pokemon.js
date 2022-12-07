@@ -16,7 +16,21 @@ module.exports = {
       sdef: 43,
       spd: 3,
       price: 900,
-      }]);
+      },
+      {
+        id: 4,
+        name: 'Charizard',
+        weight: 6,
+        height: 40,
+        description: 'me quemo',
+        hp: 10,
+        atk: 13,
+        def: 33,
+        satk: 33,
+        sdef: 43,
+        spd: 3,
+        price: 900,
+        }]);
   },
 
   down: (queryInterface, Sequelize) => {
