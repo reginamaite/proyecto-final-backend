@@ -1,0 +1,345 @@
+{
+    "tables": {
+        "moves": {
+            "tableName": "moves",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "move": {
+                    "allowNull": false,
+                    "field": "move",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": {
+                "5b2164fd68d046d44c5f050b08b92c249dbbb53a": {
+                    "name": "moves_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "moves_pkey",
+                        "name": "moves_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "pokedex": {
+            "tableName": "pokedex",
+            "schema": {
+                "idpokemon": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "pokemons",
+                        "key": "id"
+                    },
+                    "field": "idpokemon",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "owneremail": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "users",
+                        "key": "email"
+                    },
+                    "field": "owneremail",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": {
+                "ea1d96f63c9ffd50d931926d76869988d97dd952": {
+                    "name": "pokedex_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "idpokemon"
+                        },
+                        {
+                            "name": "owneremail"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "pokedex_pkey",
+                        "name": "pokedex_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "pokemons": {
+            "tableName": "pokemons",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "name": {
+                    "allowNull": false,
+                    "field": "name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "weight": {
+                    "allowNull": false,
+                    "field": "weight",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "height": {
+                    "allowNull": false,
+                    "field": "height",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "description": {
+                    "allowNull": false,
+                    "field": "description",
+                    "seqType": "Sequelize.STRING"
+                },
+                "hp": {
+                    "allowNull": false,
+                    "field": "hp",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "atk": {
+                    "allowNull": false,
+                    "field": "atk",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "def": {
+                    "allowNull": false,
+                    "field": "def",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "satk": {
+                    "allowNull": false,
+                    "field": "satk",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "sdef": {
+                    "allowNull": false,
+                    "field": "sdef",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "spd": {
+                    "allowNull": false,
+                    "field": "spd",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "price": {
+                    "allowNull": false,
+                    "field": "price",
+                    "seqType": "Sequelize.DECIMAL(19, 4)"
+                }
+            },
+            "indexes": {
+                "f2d30db80efc7d55a505bac95456435c36fc646b": {
+                    "name": "pokemons_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "pokemons_pkey",
+                        "name": "pokemons_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "pokemove": {
+            "tableName": "pokemove",
+            "schema": {
+                "idpokemon": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "pokemons",
+                        "key": "id"
+                    },
+                    "field": "idpokemon",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "idmove": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "moves",
+                        "key": "id"
+                    },
+                    "field": "idmove",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": {
+                "c557bb1f81626153e40efefbb499b1081c6ed754": {
+                    "name": "pokemove_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "idpokemon"
+                        },
+                        {
+                            "name": "idmove"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "pokemove_pkey",
+                        "name": "pokemove_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "poketype": {
+            "tableName": "poketype",
+            "schema": {
+                "idpokemon": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "pokemons",
+                        "key": "id"
+                    },
+                    "field": "idpokemon",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "idtype": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "references": {
+                        "model": "types",
+                        "key": "id"
+                    },
+                    "field": "idtype",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": {
+                "0d532b268a157ff34c89155498129e739738713c": {
+                    "name": "poketype_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "idpokemon"
+                        },
+                        {
+                            "name": "idtype"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "poketype_pkey",
+                        "name": "poketype_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "types": {
+            "tableName": "types",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "type": {
+                    "allowNull": false,
+                    "field": "type",
+                    "seqType": "Sequelize.STRING"
+                }
+            },
+            "indexes": {
+                "e5a93c346198538c253e44768451aed69ddb717a": {
+                    "name": "types_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "types_pkey",
+                        "name": "types_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        },
+        "users": {
+            "tableName": "users",
+            "schema": {
+                "email": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "field": "email",
+                    "seqType": "Sequelize.STRING"
+                },
+                "name": {
+                    "allowNull": false,
+                    "field": "name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "date": {
+                    "allowNull": false,
+                    "field": "date",
+                    "seqType": "Sequelize.DATEONLY"
+                },
+                "password": {
+                    "allowNull": false,
+                    "field": "password",
+                    "seqType": "Sequelize.STRING"
+                },
+                "pokedex": {
+                    "allowNull": false,
+                    "field": "pokedex",
+                    "seqType": "Sequelize.ARRAY(Sequelize.INTEGER)"
+                },
+                "money": {
+                    "allowNull": false,
+                    "field": "money",
+                    "seqType": "Sequelize.DECIMAL(19, 4)"
+                }
+            },
+            "indexes": {
+                "ee6075a90cc6a5df49b2b7a9024a5a70fdba68f2": {
+                    "name": "users_pkey",
+                    "unique": true,
+                    "fields": [
+                        {
+                            "name": "email"
+                        }
+                    ],
+                    "options": {
+                        "indexName": "users_pkey",
+                        "name": "users_pkey",
+                        "indicesType": "UNIQUE",
+                        "type": "UNIQUE"
+                    }
+                }
+            }
+        }
+    },
+    "path": "F:\\SENPAI PROYECTO\\proyecto final\\proyecto-final-backend\\migrations\\_current.json",
+    "backupPath": "F:\\SENPAI PROYECTO\\proyecto final\\proyecto-final-backend\\migrations\\_current_bak.json",
+    "exists": false,
+    "revision": 1
+}
