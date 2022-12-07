@@ -9,12 +9,10 @@ router.get('/pokemons', (req, res) => {
     res.send(pokemons)
 })
 
-
 router.get('/pokemons/:id', (req, res) => {
     const pokeid = req.params.id
     res.send(pokemons.find(poke => poke.id == pokeid))
 })
-
 
 
 const pokemons = [
