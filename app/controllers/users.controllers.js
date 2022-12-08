@@ -18,6 +18,47 @@ exports.findAll = (req, res) =>{
       });
 };
 
+exports.create = (req, res) =>{
+  const {email, password, date, money, name} = req.body
+
+  if(!email) {
+    res.status(400).json({
+      status: "error",
+      message: "El email no puede estar vacio"
+    })
+    return
+  }
+
+  if(!password) {
+    res.status(400).json({
+      status: "error",
+      message: "El password no puede estar vacio"
+    })
+    return
+  }
+  const encryptedPassword = bcrypt.hashSync(password, 10);
+
+  const user = {
+    name: name,
+    email: email,
+    password: encryptedPassword,
+    date: date,
+    money: 0,
+    pokedex: 0,
+  };
+
+  User.create(user)
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while creating the User.",
+      });
+    });
+  };
+
+
 
 
 exports.login = (req, res) =>{
@@ -29,7 +70,6 @@ exports.login = (req, res) =>{
       status: "error",
       message: "El email no puede estar vacio"
     })
-
     return
   }
 
