@@ -5,5 +5,6 @@ router.get('/', pokemonController.findAll)
 
 router.get('/:id', pokemonController.findById)
 
+router.post('/create', pokemonController.create)
 
 module.exports = router;

@@ -30,7 +30,8 @@ module.exports = {
         sdef: 43,
         spd: 3,
         price: 900,
-        }]);
+        }
+      ]);
   },
 
   down: (queryInterface, Sequelize) => {
