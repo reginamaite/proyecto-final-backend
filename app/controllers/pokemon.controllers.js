@@ -8,14 +8,19 @@ var models = initModels(db.sequelize);
 const Pokemon = models.pokemons;
 exports.findAll = (req, res) =>{
   Pokemon.findAll({
-    include: {
+    include: [{
       model: models.types, as: "idtype_types",
       attributes: [
         "type"
       ]
-    
+    },
+    {
+      model: models.moves, as: "idmove_moves",
+      attributes: [
+        "move"
+      ]
     }
-  })
+  ]})
       .then((data) => {
         console.log(data)
         res.send(data);
@@ -25,7 +30,6 @@ exports.findAll = (req, res) =>{
           message: err.message || "Some error occurred while retrieving tasks.",
         });
       });
-
 };
 
 exports.findById = (req, res) =>{
