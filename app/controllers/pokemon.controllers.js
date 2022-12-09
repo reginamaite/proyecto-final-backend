@@ -35,7 +35,24 @@ exports.findAll = (req, res) =>{
 exports.findById = (req, res) =>{
   const pokemonid = req.params.id;
   var condition = { id: pokemonid }
-  Pokemon.findAll({where: condition})
+  Pokemon.findAll({
+    include: [{
+      model: models.types, as: "idtype_types",
+      attributes: [
+        "type"
+      ]
+    },
+    {
+      model: models.moves, as: "idmove_moves",
+      attributes: [
+        "move"
+      ]
+    }
+  ],
+    
+    where: condition
+  
+  })
     .then((data) => {
       res.send(data);
     })
