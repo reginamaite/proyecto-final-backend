@@ -68,11 +68,11 @@ module.exports = {
       },
       // Ditto
       {
-        idpokemon: 152,
+        idpokemon: 132,
         idmove: 13,
       },
       {
-        idpokemon: 152,
+        idpokemon: 132,
         idmove: 14,
       },
       // Aron
