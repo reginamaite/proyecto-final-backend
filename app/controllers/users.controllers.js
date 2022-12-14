@@ -64,7 +64,6 @@ exports.create = (req, res) =>{
 exports.login = (req, res) =>{
   const {email, password} = req.body
   console.log(req.body)
-
   if(!email) {
     res.status(400).json({
       status: "error",
@@ -72,21 +71,17 @@ exports.login = (req, res) =>{
     })
     return
   }
-
   if(!password) {
     res.status(400).json({
       status: "error",
       message: "El password no puede estar vacio"
     })
-
     return
   }
   console.log(password)
 User.findOne({where: {email:email} })
    .then((user) => {
-
     if(user){
-
       if(bcrypt.compareSync(password, user.dataValues.password)){
         const token = jwt.sign(
           {
