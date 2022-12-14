@@ -106,7 +106,7 @@ exports.create = (req, res) => {
     });
     return;
   }
-console.log(req.body)
+
   // Create a pokemon
   const pokemon = {
     id: id,
