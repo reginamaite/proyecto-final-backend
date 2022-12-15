@@ -65,7 +65,7 @@ exports.findById = (req, res) =>{
 
 
 exports.create = (req, res) => {
-  const {id,name,weight,height,description,hp,atk,def,satk,sdef,spd,price} = req.body
+  const {id,name,weight,height,description,hp,atk,def,satk,sdef,spd,price} = req.body.pokemon
 
   // Validate request
   if (!id) {
