@@ -10,7 +10,6 @@ const MiddleMoves = models.pokemove;
 exports.findAll = (req, res) =>{
     moves.findAll()
         .then((data) => {
-          console.log(data)
           res.send(data);
         })
         .catch((err) => {

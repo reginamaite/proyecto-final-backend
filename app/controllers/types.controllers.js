@@ -10,7 +10,6 @@ const MiddleTypes = models.poketype;
 exports.findAll = (req, res) =>{
     types.findAll()
         .then((data) => {
-          console.log(data)
           res.send(data);
         })
         .catch((err) => {
@@ -21,7 +20,6 @@ exports.findAll = (req, res) =>{
   };
 
 exports.insert = (req, res) => {
-  console.log(req.body.type)
     const {idtype,idpoke} = req.body.type
 
     // Validate request

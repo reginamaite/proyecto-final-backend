@@ -81,9 +81,45 @@ module.exports = {
         idmove: 15,
       },
       {
-        idpokemon: 152,
+        idpokemon: 304,
         idmove: 16,
       },
+      // Charmeleon
+      {
+        idpokemon: 5,
+        idmove: 17,
+      },
+      {
+        idpokemon: 5,
+        idmove: 18,
+      },
+      // Charizard
+      {
+        idpokemon: 6,
+        idmove: 19,
+      },
+      {
+        idpokemon: 6,
+        idmove: 20,
+      },
+      // Wartortle
+      {
+        idpokemon: 8,
+        idmove: 21,
+      },
+      {
+        idpokemon: 8,
+        idmove: 22,
+      },
+      // Blastoise
+      {
+        idpokemon: 9,
+        idmove: 23,
+      }, 
+      {
+        idpokemon: 9,
+        idmove: 24,
+      }
       ]);
   },
 

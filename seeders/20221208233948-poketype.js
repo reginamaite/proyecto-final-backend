@@ -69,6 +69,31 @@ module.exports = {
         idpokemon: 304,
         idtype: 13,    
       },
+      // Charmeleon
+      {
+        idpokemon: 5,
+        idtype: 13,    
+      },
+      // Charizard
+      {
+        idpokemon: 6,
+        idtype: 15,    
+      },
+      {
+        idpokemon: 6,
+        idtype: 16,    
+      },
+      // Wartortle
+      {
+        idpokemon: 8,
+        idtype: 17,    
+      },
+      // Blastoise
+      {
+        idpokemon: 9,
+        idtype: 18,    
+      },
+     
       ]);
   },
 

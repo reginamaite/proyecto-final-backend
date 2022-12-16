@@ -56,8 +56,8 @@ const migrationCommands = (transaction) => [
           allowNull: false,
         },
         name: { type: Sequelize.STRING, field: "name", allowNull: false },
-        weight: { type: Sequelize.INTEGER, field: "weight", allowNull: false },
-        height: { type: Sequelize.INTEGER, field: "height", allowNull: false },
+        weight: { type: Sequelize.FLOAT, field: "weight", allowNull: false },
+        height: { type: Sequelize.FLOAT, field: "height", allowNull: false },
         description: {
           type: Sequelize.STRING,
           field: "description",

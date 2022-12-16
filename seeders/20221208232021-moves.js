@@ -83,6 +83,44 @@ module.exports = {
         id: 16,
         move: "Rock-Head",
       },
+      // Charmeleon
+      {
+        id: 17,
+        move: "Thunder-Punch",
+      },
+      {
+        id: 18,
+        move: "Fire-spin",
+      },
+      // Charizard
+      {
+        id: 19,
+        move: "Solar-Beam",
+      },
+      {
+        id: 20,
+        move: "Fire-spin",
+      },
+       // Wartortle
+       {
+        id: 21,
+        move: "Ice-punch",
+      },
+      {
+        id: 22,
+        move: "headbutt",
+      },
+      // Blastoise
+      {
+        id: 23,
+        move: "water-gun",
+      },
+      {
+        id: 24,
+        move: "hydro-pump-gun",
+      },
+      
+      
 
       ]);
   },

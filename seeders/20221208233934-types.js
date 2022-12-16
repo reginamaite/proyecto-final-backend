@@ -72,8 +72,30 @@ module.exports = {
         id: 13,
         type: "Rock",
       },
-
-
+      //Charmeleon
+      {
+        id: 14,
+        type: "Fire",
+      },
+      // Charizard
+      {
+        id: 15,
+        type: "Fire",
+      },
+      {
+        id: 16,
+        type: "Flying",
+      },
+      // Wartortle
+      {
+        id: 17,
+        type: "Water",
+      },
+      // Blastoise
+      {
+        id: 18,
+        type: "Water",
+      },
       ]);
   },
 

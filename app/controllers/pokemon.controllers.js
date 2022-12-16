@@ -22,7 +22,6 @@ exports.findAll = (req, res) =>{
     }
   ]})
       .then((data) => {
-        console.log(data)
         res.send(data);
       })
       .catch((err) => {
@@ -122,7 +121,6 @@ exports.create = (req, res) => {
     spd: spd,
     price: price
   };
-console.log(pokemon)
   // Save pokemon in the database
   Pokemon.create(pokemon)
     .then((data) => {

@@ -110,3 +110,10 @@ User.findOne({where: {email:email} })
     })}
    })
   }
+
+  exports.validateToken = (req, res) =>{
+    console.log("Ha pasado la validacion!")
+    res.status(200).json({
+      msj: "Acceso Permitido"
+    })
+    }
