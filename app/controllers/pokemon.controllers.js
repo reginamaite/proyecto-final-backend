@@ -64,7 +64,7 @@ exports.findById = (req, res) =>{
 
 
 exports.create = (req, res) => {
-  const {id,name,weight,height,description,hp,atk,def,satk,sdef,spd,price} = req.body.pokemon
+  const {id,name,weight,height,description,hp,atk,def,satk,sdef,spd,price,pokeurl} = req.body.pokemon
 
   // Validate request
   if (!id) {
@@ -105,6 +105,12 @@ exports.create = (req, res) => {
     });
     return;
   }
+  if(!pokeurl){
+    res.status(400).send({
+      message: "pokeurl can not be empty!",
+    });
+    return;
+  }
 
   // Create a pokemon
   const pokemon = {
@@ -119,7 +125,8 @@ exports.create = (req, res) => {
     satk: satk,
     sdef: sdef,
     spd: spd,
-    price: price
+    price: price,
+    pokeurl: pokeurl
   };
   // Save pokemon in the database
   Pokemon.create(pokemon)
