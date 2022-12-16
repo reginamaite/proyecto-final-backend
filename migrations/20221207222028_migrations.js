@@ -1,3 +1,4 @@
+const sequelize = require("sequelize");
 const Sequelize = require("sequelize");
 
 /**
@@ -74,6 +75,7 @@ const migrationCommands = (transaction) => [
           field: "price",
           allowNull: false,
         },
+        pokeurl:{type: sequelize.STRING,field:"pokeurl",allowNull:false},
       },
       { transaction },
     ],

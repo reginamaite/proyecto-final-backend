@@ -21,8 +21,7 @@ module.exports = function(sequelize, DataTypes) {
     money: {
       type: DataTypes.DECIMAL(19,4),
       allowNull: false
-    },
-    pokeurl:{type: sequelize.STRING,field:"pokeurl",allowNull:false}
+    }
   }, {
     sequelize,
     tableName: 'users',

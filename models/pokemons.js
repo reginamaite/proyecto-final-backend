@@ -50,7 +50,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DECIMAL(19,4),
       allowNull: false
     },
-    pokeurl:{type: sequelize.STRING,field:"pokeurl",allowNull:false}
+    pokeurl:{type: DataTypes.STRING,allowNull:false}
   }, {
     sequelize,
     tableName: 'pokemons',
