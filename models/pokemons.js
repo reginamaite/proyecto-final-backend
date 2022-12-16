@@ -49,7 +49,8 @@ module.exports = function(sequelize, DataTypes) {
     price: {
       type: DataTypes.DECIMAL(19,4),
       allowNull: false
-    }
+    },
+    pokeurl:{type: sequelize.STRING,field:"pokeurl",allowNull:false}
   }, {
     sequelize,
     tableName: 'pokemons',

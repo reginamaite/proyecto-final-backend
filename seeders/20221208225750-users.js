@@ -16,7 +16,6 @@ module.exports = {
         password: encryptedPassword,
         date: "2021-12-01",
         money: 0,
-        pokedex: [0]
       },
       {
         email: "usuario@prueba.com",
@@ -24,7 +23,6 @@ module.exports = {
         password: encryptedPassword,
         date: "2021-07-12",
         money: 0,
-        pokedex: [0]
       },     
       ]);
   },

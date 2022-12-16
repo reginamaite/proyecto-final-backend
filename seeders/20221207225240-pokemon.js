@@ -20,6 +20,7 @@ module.exports = {
         sdef: 65,
         spd: 45,
         price: 1200,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
       },
       {
         id: 4,
@@ -34,6 +35,7 @@ module.exports = {
         sdef: 50,
         spd: 65,
         price: 1500,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
         },
       {
           id: 7,
@@ -48,6 +50,7 @@ module.exports = {
           sdef: 64,
           spd: 43,
           price: 1300,
+          pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
       },
       {
         id: 12,
@@ -62,6 +65,7 @@ module.exports = {
         sdef: 80,
         spd: 70,
         price: 1200,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
       },
       {
         id: 25,
@@ -76,6 +80,7 @@ module.exports = {
         sdef: 65,
         spd: 45,
         price: 1200,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
       },
       {
         id: 152,
@@ -90,6 +95,7 @@ module.exports = {
         sdef: 100,
         spd: 100,
         price: 5000,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
       },
       {
         id: 92,
@@ -104,6 +110,7 @@ module.exports = {
         sdef: 35,
         spd: 80,
         price: 1400,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/92.png",
       },
       {
         id: 132,
@@ -118,6 +125,7 @@ module.exports = {
         sdef: 48,
         spd: 48,
         price: 1300,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png",
       },
       {
         id: 304,
@@ -132,6 +140,7 @@ module.exports = {
         sdef: 85,
         spd: 100,
         price: 1200,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/304.png",
       },
       {
         id: 5,
@@ -146,6 +155,7 @@ module.exports = {
         sdef: 65,
         spd: 80,
         price: 1600,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
       },
       
       {
@@ -161,6 +171,7 @@ module.exports = {
         sdef: 85,
         spd: 100,
         price: 2000,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
       },
      
       {
@@ -176,6 +187,7 @@ module.exports = {
         sdef: 80,
         spd: 58,
         price: 1400,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
       },
       {
         id: 9,
@@ -190,6 +202,7 @@ module.exports = {
         sdef: 105,
         spd: 78,
         price: 2000,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
       },
       {
         id: 2,
@@ -204,6 +217,7 @@ module.exports = {
         sdef: 80,
         spd: 58,
         price: 1400,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
       },
       {
         id: 3,
@@ -218,6 +232,7 @@ module.exports = {
         sdef: 100,
         spd: 100,
         price: 2000,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
       },
       {
         id: 94,
@@ -232,6 +247,7 @@ module.exports = {
         sdef: 100,
         spd: 100,
         price: 2200,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
       },
       {
         id: 26,
@@ -246,6 +262,7 @@ module.exports = {
         sdef: 100,
         spd: 100,
         price: 1800,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
       },
       {
         id: 149,
@@ -260,6 +277,7 @@ module.exports = {
         sdef: 80,
         spd: 110,
         price: 2100,
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
       },
       ]);
   },
