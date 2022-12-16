@@ -86,42 +86,84 @@ module.exports = {
       // Charmeleon
       {
         id: 17,
-        move: "Thunder-Punch",
+        move: "Mega-Punch",
       },
       {
         id: 18,
-        move: "Fire-spin",
+        move: "Fire-Punch",
       },
-      // Charizard
-      {
-        id: 19,
-        move: "Solar-Beam",
-      },
-      {
-        id: 20,
-        move: "Fire-spin",
-      },
-       // Wartortle
-       {
-        id: 21,
-        move: "Ice-punch",
-      },
-      {
-        id: 22,
-        move: "headbutt",
-      },
-      // Blastoise
-      {
-        id: 23,
-        move: "water-gun",
-      },
-      {
-        id: 24,
-        move: "hydro-pump-gun",
-      },
-      
-      
-
+//Charizard
+{
+  id: 19,
+  move: "Mega-Punch",
+},
+{
+  id: 20,
+  move: "Fire-Punch",
+},
+//Wartortle
+{
+  id: 21,
+  move: "Torrent",
+},
+{
+  id: 22,
+  move: "Rain-Dish",
+},
+//Blastoise
+{
+  id: 23,
+  move: "Aqua Tail",
+},
+{
+  id: 24,
+  move: "Water Pulse",
+},
+//Ivysaur
+{
+  id: 25,
+  move: "Chiorophyll",
+},
+{
+  id: 26,
+  move: "Overgrow",
+},
+//Venusaur
+{
+  id: 27,
+  move: "Petal Dance",
+},
+{
+  id: 28,
+  move: "Poison Powder",
+},
+// Gengar
+{
+  id: 29,
+  move: "Confuse Ray",
+},
+{
+  id: 30,
+  move: "Hypnosis",
+},
+//Raichu
+{
+  id: 31,
+  move: "Thunder Shock",
+},
+{
+  id: 32,
+  move: "Thunderbolt",
+},
+// Dragonite
+{
+  id: 33,
+  move: "Wing Attack",
+},
+{
+  id: 34,
+  move: "Hurricane",
+},
       ]);
   },
 
