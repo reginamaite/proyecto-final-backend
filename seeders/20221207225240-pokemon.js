@@ -110,7 +110,7 @@ module.exports = {
         sdef: 35,
         spd: 80,
         price: 1400,
-        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/92.png",
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png",
       },
       {
         id: 132,
