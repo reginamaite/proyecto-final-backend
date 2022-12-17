@@ -114,11 +114,6 @@ const migrationCommands = (transaction) => [
           field: "password",
           allowNull: false,
         },
-        pokedex: {
-          type: Sequelize.ARRAY(Sequelize.INTEGER),
-          field: "pokedex",
-          allowNull: false,
-        },
         money: {
           type: Sequelize.DECIMAL(19, 4),
           field: "money",
