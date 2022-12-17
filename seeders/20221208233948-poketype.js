@@ -43,7 +43,7 @@ module.exports = {
       },
        // Mew - 1 type
       {
-        idpokemon: 152,
+        idpokemon: 151,
         idtype: 8,    
       },
        // Gastyle - 2 types

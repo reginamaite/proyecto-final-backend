@@ -58,7 +58,7 @@ module.exports = {
       },
       // Mew
       {
-        idpokemon: 152,
+        idpokemon: 151,
         idmove: 11,
       },
       // Gastly
