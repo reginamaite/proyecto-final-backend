@@ -83,7 +83,7 @@ module.exports = {
         pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
       },
       {
-        id: 152,
+        id: 151,
         name: 'Mew',
         weight: 4.0,
         height: 0.4,
@@ -95,7 +95,7 @@ module.exports = {
         sdef: 100,
         spd: 100,
         price: 5000,
-        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
+        pokeurl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
       },
       {
         id: 92,
