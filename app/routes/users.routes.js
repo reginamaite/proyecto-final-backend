@@ -9,6 +9,8 @@ router.post("/create", userController.create)
 
 router.post("/login", userController.login)
 
+router.post("/getinfo", verifyToken, userController.findByPk)
+
 router.post("/validate-token", verifyToken, userController.validateToken)
 
 

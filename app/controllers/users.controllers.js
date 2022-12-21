@@ -18,6 +18,33 @@ exports.findAll = (req, res) =>{
       });
 };
 
+
+exports.findByPk = (req, res) =>{
+
+  console.log(req.body)
+  const email = req.body.email
+  console.log(email)
+
+  if(!email) {
+    res.status(400).json({
+      status: "error",
+      message: "El email no puede estar vacio"
+    })
+    return
+  }
+
+  User.findOne({where: {email:email} })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while retrieving tasks.",
+      });
+    });
+};
+
+
 exports.create = (req, res) =>{
   const {email, password, date, money, name} = req.body
 
@@ -79,6 +106,7 @@ exports.login = (req, res) =>{
     return
   }
   console.log(password)
+
 User.findOne({where: {email:email} })
    .then((user) => {
     if(user){
