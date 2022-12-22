@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-
+const { Op } = require("sequelize");
 const db = require("../../models");
 var initModels = require("../../models/init-models").initModels; 
 var models = initModels(db.sequelize);
@@ -10,6 +10,22 @@ const MiddleTypes = models.poketype;
 exports.findAll = (req, res) =>{
     types.findAll()
         .then((data) => {
+          res.send(data);
+        })
+        .catch((err) => {
+          res.status(500).send({
+            message: err.message || "Some error occurred while retrieving tasks.",
+          });
+        });
+  };
+
+exports.findUniqueTypes = (req, res) =>{
+    types.findAll({
+      where: {
+        id: { [Op.lte]: 13 },
+    }})
+        .then((data) => {
+          console.log(data)
           res.send(data);
         })
         .catch((err) => {
