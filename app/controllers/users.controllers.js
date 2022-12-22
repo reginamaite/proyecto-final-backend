@@ -145,3 +145,62 @@ User.findOne({where: {email:email} })
       msj: "Acceso Permitido"
     })
     }
+
+  exports.addMoneyByPk = (req, res) =>{
+    const {email, money} = req.body
+    console.log(req.body)
+    if(!email) {
+      res.status(400).json({
+        status: "error",
+        message: "El email no puede estar vacio"
+      })
+      return
+    }
+
+    if(!money) {
+      res.status(400).json({
+        status: "error",
+        message: "El dinero no puede estar vacio"
+      })
+      return
+    }
+    User.update(
+      {
+        money: money,
+      },
+      {
+        where: { email: email },
+      }
+    )
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while retrieving tasks.",
+      });
+    })
+    }
+
+    exports.getMoneyByPk = (req, res) =>{
+      const {email} = req.body
+      console.log(req.body)
+      if(!email) {
+        res.status(400).json({
+          status: "error",
+          message: "El email no puede estar vacio"
+        })
+        return
+      } 
+  
+      User.findOne({where: {email:email} , attributes: ['money'] })
+      .then((data) => {
+        res.send(data);
+      })
+      .catch((err) => {
+        res.status(500).send({
+          message: err.message || "Some error occurred while retrieving tasks.",
+        });
+      });
+
+      }
