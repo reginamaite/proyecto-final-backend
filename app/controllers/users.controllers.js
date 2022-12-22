@@ -1,10 +1,11 @@
 require("dotenv").config();
 
 const db = require("../../models");
-const User = db.users;
 const jwt = require("jsonwebtoken")
 const bcrypt = require('bcrypt');
-
+var initModels = require("../../models/init-models").initModels; 
+var models = initModels(db.sequelize);
+const User = models.users;
 
 exports.findAll = (req, res) =>{
     User.findAll()
@@ -44,6 +45,26 @@ exports.findByPk = (req, res) =>{
     });
 };
 
+
+exports.pokedex = (req, res) =>{
+  const email = req.body.email;
+  var condition = { email: email }
+  User.findAll({
+    include: [{
+      model: models.pokemons, as: "idpokemon_pokemons",
+    }
+  ],
+  where: condition
+  })
+    .then((data) => {
+      res.send(data);
+    })
+    .catch((err) => {
+      res.status(500).send({
+        message: err.message || "Some error occurred while retrieving tasks.",
+      });
+    });
+};
 
 exports.create = (req, res) =>{
   const {email, password, date, money, name} = req.body
