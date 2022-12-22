@@ -83,87 +83,73 @@ module.exports = {
         id: 16,
         move: "Rock-Head",
       },
-      // Charmeleon
-      {
-        id: 17,
-        move: "Mega-Punch",
-      },
-      {
-        id: 18,
-        move: "Fire-Punch",
-      },
-//Charizard
-{
-  id: 19,
-  move: "Mega-Punch",
-},
-{
-  id: 20,
-  move: "Fire-Punch",
-},
-//Wartortle
-{
-  id: 21,
-  move: "Torrent",
-},
-{
-  id: 22,
-  move: "Rain-Dish",
-},
+
 //Blastoise
 {
-  id: 23,
+  id: 17,
   move: "Aqua Tail",
 },
 {
-  id: 24,
+  id: 18,
   move: "Water Pulse",
-},
-//Ivysaur
-{
-  id: 25,
-  move: "Chiorophyll",
-},
-{
-  id: 26,
-  move: "Overgrow",
 },
 //Venusaur
 {
-  id: 27,
+  id: 19,
   move: "Petal Dance",
 },
 {
-  id: 28,
+  id: 20,
   move: "Poison Powder",
 },
 // Gengar
 {
-  id: 29,
+  id: 21,
   move: "Confuse Ray",
 },
 {
-  id: 30,
+  id: 22,
   move: "Hypnosis",
 },
 //Raichu
 {
-  id: 31,
+  id: 23,
   move: "Thunder Shock",
 },
 {
-  id: 32,
+  id: 24,
   move: "Thunderbolt",
 },
 // Dragonite
 {
-  id: 33,
+  id: 25,
   move: "Wing Attack",
 },
 {
-  id: 34,
+  id: 26,
   move: "Hurricane",
 },
+// Arbok
+{
+  id: 27,
+  move: "Poison Sting",
+},
+{
+  id: 28,
+  move: "Gunk Shot",
+},
+// Pontya
+{
+  id: 29,
+  move: "Fire Blast",
+},
+// Meowth 
+{
+  id: 30,
+  move: "Fire Blast",
+},
+
+
       ]);
   },
 

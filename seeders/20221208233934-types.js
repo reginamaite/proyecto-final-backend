@@ -72,72 +72,11 @@ module.exports = {
         id: 13,
         type: "Rock",
       },
-       // Charmeleon
        {
         id: 14,
-        type: "Fire",
-      },
-       //Charizard
-       {
-        id: 15,
-        type: "Fire",
-      },
-      {
-        id: 16,
-        type: "Flying",
-      },
-       // Wartortle
-       {
-        id: 17,
-        type: "Water",
-      },
-       // Blastoise
-       {
-        id: 18,
-        type: "Water",
-      },
-       // Ivysaur
-       {
-        id: 19,
-        type: "Grass",
-      },
-      {
-        id: 20,
-        type: "Poison",
-      },
-       //Venusaur
-       {
-        id: 21,
-        type: "Grass",
-      },
-      {
-        id: 22,
-        type: "Poison",
-      },
-       // Gengar
-       {
-        id: 23,
-        type: "Ghost",
-      },
-      {
-        id: 24,
-        type: "Poison",
-      },
-       // Raichu
-       {
-        id: 25,
-        type: "Electric",
-      },
-       //Dragonite
-       {
-        id: 26,
         type: "Dragon",
       },
-      {
-        id: 27,
-        type: "Flying",
-      },
-     
+      
       ]);
   },
 

@@ -77,64 +77,78 @@ module.exports = {
       //Charizard
       {
         idpokemon: 6,
-        idtype: 15,    
+        idtype: 3,    
       },
       {
         idpokemon: 6,
-        idtype: 16,    
+        idtype: 6,    
       },
       //Wartortle
       {
         idpokemon: 8,
-        idtype: 17,    
+        idtype: 4,    
       },
       //Blastoise
       {
         idpokemon: 9,
-        idtype: 18,    
+        idtype: 4,    
       },
       //Ivysaur
       {
         idpokemon: 3,
-        idtype: 19,    
+        idtype: 1,    
       },
       {
         idpokemon: 3,
-        idtype: 20,    
+        idtype: 2,    
       },
       //Venusaur
       {
         idpokemon: 2,
-        idtype: 20,    
+        idtype: 1,    
       },
       {
         idpokemon: 2,
-        idtype: 21,    
+        idtype: 2,    
       },
       // Gengar
       {
         idpokemon: 94,
-        idtype: 23,   
+        idtype: 9,   
       },
       {
         idpokemon: 94,
-        idtype: 24,    
+        idtype: 10,    
       },
       //Raichu
       {
         idpokemon: 26,
-        idtype: 25,    
+        idtype: 7,    
       },
       // Dragonite
       {
         idpokemon: 149,
-        idtype: 26,    
+        idtype: 14,    
       },
       {
         idpokemon: 149,
-        idtype: 27,    
+        idtype: 6,    
       },
-
+      // Arbok
+      {
+        idpokemon: 24,
+        idtype: 2,    
+      },
+      // Pontya
+      {
+        idpokemon: 77,
+        idtype: 3,    
+      },
+      // Meowth
+      {
+        idpokemon: 52,
+        idtype: 11,    
+      },
       ]);
      
   },

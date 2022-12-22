@@ -87,29 +87,29 @@ module.exports = {
       // Charmeleon
       {
         idpokemon: 5,
-        idmove: 17,
+        idmove: 3,
       },
       {
         idpokemon: 5,
-        idmove: 18,
+        idmove: 4,
       },
       //Charizard
       {
         idpokemon: 6,
-        idmove: 19,
+        idmove: 3,
       },
       {
         idpokemon: 6,
-        idmove: 20,
+        idmove: 4,
       },
       //Wartortle
       {
         idpokemon: 8,
-        idmove: 21,
+        idmove: 17,
       },
       {
         idpokemon: 8,
-        idmove: 22,
+        idmove: 18,
       },
       //Blastoise
       {
@@ -123,48 +123,67 @@ module.exports = {
       //Ivysaur
       {
         idpokemon: 2,
-        idmove: 25,
+        idmove: 1,
       },
       {
         idpokemon: 2,
-        idmove: 26,
+        idmove: 2,
       },
       //Venusaur
       {
         idpokemon: 3,
-        idmove: 27,
+        idmove: 19,
       },
       {
         idpokemon: 3,
-        idmove: 28,
+        idmove: 20,
       },
       // Gengar
       {
         idpokemon: 94,
-        idmove: 29,
+        idmove: 21,
       },
       {
         idpokemon: 94,
-        idmove: 30,
+        idmove: 22,
       },
       //Raichu
       {
         idpokemon: 26,
-        idmove: 31,
+        idmove: 23,
       },
       {
         idpokemon: 26,
-        idmove: 32,
+        idmove: 24,
       },
       // Dragonite
       {
         idpokemon: 149,
-        idmove: 33,
+        idmove: 25,
       },
       {
         idpokemon: 149,
-        idmove: 34,
+        idmove: 26,
       },
+        // Arbok
+        {
+          idpokemon: 24,
+          idmove: 27,
+        },
+        {
+          idpokemon: 24,
+          idmove: 28,
+        },
+        //Pontya
+        {
+          idpokemon: 77,
+          idmove: 29,
+        },
+        // Meowth 
+        {
+          idpokemon: 52,
+          idmove: 30,
+        },
       ]);
   },
 
