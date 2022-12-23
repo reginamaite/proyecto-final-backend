@@ -17,6 +17,7 @@ router.post("/get-money", verifyToken, userController.getMoneyByPk)
 
 router.post("/add-money", verifyToken, userController.addMoneyByPk)
 
-
 router.post('/pokedex', verifyToken, userController.pokedex)
+
+
 module.exports = router;

@@ -168,8 +168,12 @@ User.findOne({where: {email:email} })
     }
 
   exports.addMoneyByPk = (req, res) =>{
-    const {email, money} = req.body
+    const email = req.body.email
+    const money = req.body.money
+
     console.log(req.body)
+    console.log(email)
+    console.log(money)
     if(!email) {
       res.status(400).json({
         status: "error",
