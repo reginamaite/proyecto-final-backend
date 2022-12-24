@@ -15,14 +15,14 @@ module.exports = {
         name: "prueba",
         password: encryptedPassword,
         date: "2021-12-01",
-        money: 0,
+        money: 1000,
       },
       {
         email: "usuario@prueba.com",
         name: "usuario",
         password: encryptedPassword,
         date: "2021-07-12",
-        money: 0,
+        money: 200,
       },     
       ]);
   },

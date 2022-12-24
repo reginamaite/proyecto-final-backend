@@ -72,7 +72,7 @@ module.exports = {
        // Charmeleon
        {
         idpokemon: 5,
-        idtype: 14,    
+        idtype: 3,    
       },
       //Charizard
       {
