@@ -182,13 +182,6 @@ User.findOne({where: {email:email} })
       return
     }
 
-    if(!money) {
-      res.status(400).json({
-        status: "error",
-        message: "El dinero no puede estar vacio"
-      })
-      return
-    }
     User.update(
       {
         money: money,
